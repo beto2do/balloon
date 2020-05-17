@@ -1,3 +1,5 @@
+import Color from './color';
+
 class Balloon {
 
     constructor(ctx, centerX, centerY, radius, color) {
@@ -105,3 +107,5 @@ class Balloon {
         this.ctx.fill();
     }
 }
+
+export default Balloon;
