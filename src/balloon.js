@@ -105,6 +105,12 @@ class Balloon {
                                     this.centerX + halfTieWidth, balloonBottomY + tieHeight);
         this.ctx.lineTo(this.centerX + 1, balloonBottomY);
         this.ctx.fill();
+
+        this.ctx.beginPath();
+        this.ctx.moveTo(this.centerX, balloonBottomY + tieCurveHeight);
+        this.ctx.lineTo(this.centerX, balloonBottomY + 200);
+        this.ctx.strokeStyle = "#999C9E";
+        this.ctx.stroke();
     }
 }
 
